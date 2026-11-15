@@ -133,3 +133,7 @@ cd web && pnpm dev                                    # :5173，/api 代理到 :
 cd server && cargo test     # PDU 编解码、AT 引擎、短信拼接
 cd web && pnpm lint && pnpm build
 ```
+
+## 友情链接
+
+- [LINUX DO](https://linux.do)

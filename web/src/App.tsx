@@ -116,6 +116,18 @@ export default function App() {
         {page === 'settings' && <SettingsPage />}
       </main>
 
+      <footer className="mx-auto w-full max-w-6xl px-4 pb-4 pt-2 text-center text-xs text-zinc-400 dark:text-zinc-500">
+        友情链接：
+        <a
+          href="https://linux.do"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="hover:text-sky-600 hover:underline dark:hover:text-sky-400"
+        >
+          LINUX DO
+        </a>
+      </footer>
+
       <div className="pointer-events-none fixed inset-x-0 bottom-4 z-50 flex flex-col items-center gap-2 px-4">
         {toasts.map((t) => (
           <div
