@@ -36,6 +36,24 @@ usb-card/
 
 ## 运行
 
+### 预编译版本
+
+[Releases](https://github.com/jadrens/jad-usb-controller/releases) 提供单文件可执行程序（已内嵌前端与 SQLite，无需安装依赖）：
+
+| 文件 | 平台 |
+|---|---|
+| `*-x86_64-unknown-linux-musl.tar.gz` | Linux x86_64（静态链接，任意发行版） |
+| `*-aarch64-unknown-linux-musl.tar.gz` | Linux ARM64（树莓派、ARM 路由器等） |
+| `*-x86_64-pc-windows-msvc.zip` | Windows x86_64 |
+
+```sh
+./usb-card-server --listen 0.0.0.0:8080
+```
+
+Windows 上请安装模块厂商的 USB 驱动，使 AT 口显示为 COM 口，然后用 `--transport serial`（可加 `--serial-port COM5`）。直连 USB 模式在 Windows 上需要用 Zadig 把 AT 接口换成 WinUSB 驱动，一般不推荐。
+
+### 从源码构建
+
 ```sh
 # 前端
 cd web && pnpm install && pnpm build      # 输出 web/dist，被后端编译时嵌入
