@@ -90,7 +90,7 @@ jobs:
           mkdir -p "dist/$name"
           bin=usb-card-server
           [[ "${{ matrix.target }}" == *windows* ]] && bin=usb-card-server.exe
-          cp "server/target/${{ matrix.target }}/release/$bin" README.md "dist/$name/"
+          cp "server/target/${{ matrix.target }}/release/$bin" README.md LICENSE "dist/$name/"
           cd dist
           if [[ "${{ matrix.archive }}" == zip ]]; then
             7z a "$name.zip" "$name" >/dev/null

@@ -137,3 +137,7 @@ cd web && pnpm lint && pnpm build
 ## 友情链接
 
 - [LINUX DO](https://linux.do)
+
+## 许可证
+
+[MIT](LICENSE)
