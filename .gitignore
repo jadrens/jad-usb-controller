@@ -1,0 +1,32 @@
+server/target/
+web/node_modules/
+web/dist/
+*.db
+*.db-shm
+*.db-wal
+
+# Local-only deployment notes and configs (not published)
+deploy/
+deploy.md
+
+# Local tools, caches and runtime credentials
+.ai-data/
+.ai-criteria/
+.claude/
+.agents/
+.codex/
+.vscode/
+.idea/
+__pycache__/
+*.py[cod]
+.venv/
+cache/
+backups/
+*.log
+*.dat
+.env
+.env.*
+!.env.example
+!.env.sample
+.DS_Store
+Thumbs.db
